@@ -1,0 +1,10 @@
+output "workspace" { value = terraform.workspace }
+output "environment" { value = var.environment }
+output "primary_region" { value = var.aws_region }
+output "secondary_region" { value = var.secondary_region }
+output "instance_count" { value = var.instance_count }
+output "instance_type" { value = var.instance_type }
+output "primary_instance_ids" { value = aws_instance.primary[*].id }
+output "primary_public_ips" { value = aws_instance.primary[*].public_ip }
+output "secondary_instance_ids" { value = aws_instance.secondary[*].id }
+output "secondary_public_ips" { value = aws_instance.secondary[*].public_ip }

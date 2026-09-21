@@ -1,0 +1,11 @@
+environment      = "prod"
+aws_region       = "ap-south-1"
+secondary_region = "ap-southeast-1"
+
+instance_type  = "t2.small"
+instance_count = 3
+
+project_name = "tf-demo"
+owner        = "Operations Team"
+
+excluded_azs = ["ap-south-1c"]

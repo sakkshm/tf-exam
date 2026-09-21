@@ -1,0 +1,11 @@
+environment      = "dev"
+aws_region       = "ap-south-1"
+secondary_region = "ap-southeast-1"
+
+instance_type  = "t2.micro"
+instance_count = 1
+
+project_name = "tf-demo"
+owner        = "Development Team"
+
+excluded_azs = ["ap-south-1c"]
